@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi Primera Página</title>
-  </head>
-  <body>
-    <h1>Hola mundo, esta es mi web</h1>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuGoDev</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>TuGoDev</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="fade-in">
+      <h2>Bienvenido a TuGoDev</h2>
+      <p>Este es un sitio minimalista hecho con HTML, CSS y JavaScript.</p>
+      <button id="clickBtn">Haz clic</button>
+    </section>
+
+    <section id="contacto" class="fade-in">
+      <h2>Contáctame</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TuGoDev</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
